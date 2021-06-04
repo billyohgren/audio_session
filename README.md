@@ -29,7 +29,6 @@ Or use a custom configuration:
 ```dart
 final session = await AudioSession.instance;
 await session.configure(AudioSessionConfiguration(
-  avAudioSessionCategory: AVAudioSessionCategory.playAndRecord,
   avAudioSessionCategoryOptions: AVAudioSessionCategoryOptions.allowBluetooth,
   avAudioSessionMode: AVAudioSessionMode.spokenAudio,
   avAudioSessionRouteSharingPolicy: AVAudioSessionRouteSharingPolicy.defaultPolicy,
